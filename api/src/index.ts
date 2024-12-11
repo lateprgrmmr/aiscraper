@@ -4,7 +4,7 @@ import express, { Express, NextFunction, Request, Response } from "express";
 import { Connection, getConnection } from "../database/connection";
 
 
-const PORT = process.env.PORT || 5435;
+const PORT = process.env.PORT || 5434;
 
 const app: Express = express();
 
@@ -21,7 +21,7 @@ app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
 
-app.use('/api', require('./routes'));
+// app.use('/api', require('./routes'));
 // app.use('/users', usersRouter);
 
 export default app;

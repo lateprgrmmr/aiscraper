@@ -18,18 +18,4 @@ services:
       # - ./extensions.sql:/docker-entrypoint-initdb.d/1_extensions.sql
 
 volumes:
-  pgdata:  
-      
-
-  #     services:
-  # postgres:
-  #   image: postgres:14.4
-  #   command: ["postgres", "-c", "log_statement=all", "-c", "log_destination=stderr"]
-  #   volumes:
-  #     - ./local/refreshDatabase.sql:/docker-entrypoint-initdb.d/4_refreshDatabase.sql
-  #     - ./.env.local.sql:/docker-entrypoint-initdb.d/5_env.sql
-  #   environment:
-  #     POSTGRES_DB: gatherdev
-  #     POSTGRES_PASSWORD: supersecret
-  #   ports:
-  #     - 5432:5432
+  pgdata:
