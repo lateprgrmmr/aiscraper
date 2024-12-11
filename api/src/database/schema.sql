@@ -1,4 +1,10 @@
 
+CREATE TABLE website_vendors (
+    id SERIAL PRIMARY KEY,
+    name TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 CREATE TABLE scraper_insights (
     id SERIAL PRIMARY KEY,
     url TEXT,
